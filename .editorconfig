@@ -1,16 +1,16 @@
 # Editor configuration, see https://editorconfig.org
-root = true
+root = true # Indicates that this is the root EditorConfig file
 
-[*]
-charset = utf-8
-indent_style = space
-indent_size = 2
-insert_final_newline = true
-trim_trailing_whitespace = true
+[*] # Applies to all files
+charset = utf-8 # Sets the character encoding to UTF-8
+indent_style = space # Uses spaces for indentation
+indent_size = 2 # Sets the number of spaces per indentation level
+insert_final_newline = true # Ensures files end with a newline
+trim_trailing_whitespace = true # Removes any trailing whitespace
 
-[*.ts]
-quote_type = single
+[*.ts] # Applies to all TypeScript files
+quote_type = single # Enforces the use of single quotes
 
-[*.md]
-max_line_length = off
-trim_trailing_whitespace = false
+[*.md] # Applies to all Markdown files
+max_line_length = off # Disables the maximum line length rule
+trim_trailing_whitespace = false # Allows trailing whitespace

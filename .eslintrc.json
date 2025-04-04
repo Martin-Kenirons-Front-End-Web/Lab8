@@ -1,46 +1,46 @@
 {
-  "root": true,
-  "ignorePatterns": ["projects/**/*"],
+  "root": true, // Indicates that this is the root ESLint configuration file
+  "ignorePatterns": ["projects/**/*"], // Files and directories to ignore during linting
   "overrides": [
     {
-      "files": ["*.ts"],
+      "files": ["*.ts"], // Applies this configuration to all TypeScript files
       "parserOptions": {
-        "project": ["tsconfig.json"],
-        "createDefaultProgram": true
+        "project": ["tsconfig.json"], // Specifies the TypeScript configuration file
+        "createDefaultProgram": true // Allows ESLint to create a default TypeScript program
       },
       "extends": [
-        "plugin:@angular-eslint/recommended",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-eslint/recommended", // Uses recommended rules for Angular
+        "plugin:@angular-eslint/template/process-inline-templates" // Processes inline templates in Angular components
       ],
       "rules": {
         "@angular-eslint/component-class-suffix": [
-          "error",
+          "error", // Enforces this rule as an error
           {
-            "suffixes": ["Page", "Component"]
+            "suffixes": ["Page", "Component"] // Requires component classes to have these suffixes
           }
         ],
         "@angular-eslint/component-selector": [
-          "error",
+          "error", // Enforces this rule as an error
           {
-            "type": "element",
-            "prefix": "app",
-            "style": "kebab-case"
+            "type": "element", // Requires selectors to be elements
+            "prefix": "app", // Requires selectors to have the prefix 'app'
+            "style": "kebab-case" // Requires selectors to use kebab-case
           }
         ],
         "@angular-eslint/directive-selector": [
-          "error",
+          "error", // Enforces this rule as an error
           {
-            "type": "attribute",
-            "prefix": "app",
-            "style": "camelCase"
+            "type": "attribute", // Requires selectors to be attributes
+            "prefix": "app", // Requires selectors to have the prefix 'app'
+            "style": "camelCase" // Requires selectors to use camelCase
           }
         ]
       }
     },
     {
-      "files": ["*.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended"],
-      "rules": {}
+      "files": ["*.html"], // Applies this configuration to all HTML files
+      "extends": ["plugin:@angular-eslint/template/recommended"], // Uses recommended rules for Angular templates
+      "rules": {} // No additional rules specified for HTML files
     }
   ]
 }

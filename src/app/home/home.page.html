@@ -1,13 +1,17 @@
+<!-- This is the header section of the page -->
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <!-- Title of the application -->
     <ion-title>
       Status App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- This is the main content section of the page -->
 <ion-content [fullscreen]="true">
+  <!-- Displays the latest status dynamically using the myStatus variable -->
   <ion-title>Your latest Status is: {{myStatus}}</ion-title>
+  <!-- Button to navigate to the status update page -->
   <ion-button [routerLink]="['/status']">UPDATE STATUS</ion-button>
-
 </ion-content>

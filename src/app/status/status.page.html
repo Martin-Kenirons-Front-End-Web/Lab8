@@ -1,32 +1,41 @@
+<!-- This is the header section of the page -->
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <!-- Back button and title of the page -->
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     <ion-title>Status</ion-title>
-  </ion-buttons>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+<!-- This is the main content section of the page -->
 <ion-content [fullscreen]="true">
+  <!-- List of status options with radio buttons -->
   <ion-list>
     <ion-radio-group [(ngModel)]="myStatus">
+    <!-- Happy status option -->
     <ion-item>
       <ion-label>Happy</ion-label>
       <ion-radio slot="end" value="Happy"></ion-radio>
     </ion-item>
+    <!-- Sad status option -->
     <ion-item>
       <ion-label>Sad</ion-label>
       <ion-radio slot="end" value="Sad"></ion-radio>
     </ion-item>
+    <!-- Energetic status option -->
     <ion-item>
       <ion-label>Energetic</ion-label>
       <ion-radio slot="end" value="Energetic"></ion-radio>
     </ion-item>
+    <!-- Lazy status option -->
     <ion-item>
       <ion-label>Lazy</ion-label>
       <ion-radio slot="end" value="Lazy"></ion-radio>
     </ion-item>
   </ion-radio-group>
   </ion-list>
+  <!-- Save button to trigger the onButtonClick function -->
   <ion-button (click)="onButtonClick()">SAVE</ion-button>
 </ion-content>

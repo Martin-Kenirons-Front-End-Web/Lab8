@@ -8,9 +8,9 @@
 # You can see what browsers were selected by your queries by running:
 #   npx browserslist
 
-Chrome >=79
-ChromeAndroid >=79
-Firefox >=70
-Edge >=79
-Safari >=14
-iOS >=14
+Chrome >=79 # Supports Chrome version 79 and above
+ChromeAndroid >=79 # Supports Chrome on Android version 79 and above
+Firefox >=70 # Supports Firefox version 70 and above
+Edge >=79 # Supports Microsoft Edge version 79 and above
+Safari >=14 # Supports Safari version 14 and above
+iOS >=14 # Supports iOS version 14 and above
